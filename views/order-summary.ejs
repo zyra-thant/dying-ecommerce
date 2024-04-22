@@ -1,0 +1,50 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/nav.ejs') %>
+<!--==========Order Summary Section==========-->
+<div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h2>Order Summary</h2>
+        <p class="lead">Thank you for your order, Tom Huynh!</p>
+      </div>
+  
+      <div class="row g-5">
+        <div class="col-md-4 col-lg-7 mx-auto">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Your cart</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Fairtrade Pocket Hoodie</h6>
+                <small class="text-body-secondary">A comfortable and stylish hoodie made from fairtrade materials.</small>
+              </div>
+              <span class="text-body-secondary">$64.95</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Rudby Jergy</h6>
+                <small class="text-body-secondary">A soft and breathable jersey made with high-quality Rudby cotton.</small>
+              </div>
+              <span class="text-body-secondary">$69.95</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Rmit Fairtrade Polo</h6>
+                <small class="text-body-secondary">A classic polo shirt made with fairtrade materials and featuring the RMIT logo.</small>
+              </div>
+              <span class="text-body-secondary">$21.95</span>
+            </li>
+          
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (AUD)</span>
+              <strong>$156.85</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+<!--==========Order Summary Section==========-->
+<%- include('./partials/footer.ejs') %>
