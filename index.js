@@ -18,9 +18,17 @@ app.get('/', (req, res) => {
 });
 
 // Define a product route
-app.post('/product/:id', (req, res) => {
+app.get('/product/:id', (req, res) => {
+    const {id} = req.params;
+    const matchedID = products.find(product => product.id == id);
+    res.render('/product', { product: matchedID });
+});
 
-    res.render('/product', { product: products });
+// Define a delete route
+app.get('/product/:id/delete', (req, res) => {
+    const {id} = req.params;
+    const matchedID = products.find(product => product.id != id);
+    res.render('/', { product: products});
 });
 
 // Define a form order route
